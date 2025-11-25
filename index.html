@@ -769,9 +769,9 @@
             const data = Object.fromEntries(formData.entries());
 
             try {
-                const response = await fetch('./submit', {
+                const response = await fetch('/submit', {
                     method: 'POST',
-                    headers: { 'Content-Type': './json' },
+                    headers: { 'Content-Type': '/json' },
                     body: JSON.stringify(data)
                 });
 
@@ -860,4 +860,5 @@
     </script>
 </body>
 </html>
+
 
